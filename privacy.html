@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy &amp; help — Hover Preview Downloader</title><link rel="stylesheet" href="popup.css"><link rel="icon" href="icons/icon32.png"></head>
+<body class="policy">
+  <header><img src="icons/icon128.png" width="64" height="64" alt=""><div><h1>Hover Preview Downloader</h1><p class="lead">Privacy &amp; help · Updated 4 October 2026</p></div></header>
+  <p>Created by <strong>Aydin Gasimov and Majid Rahmanov</strong>. Find and save standalone video previews that you own or have permission to download.</p>
+  <section><h2>What the extension accesses</h2>
+    <p>On HTTP and HTTPS pages where you allow site access, the extension inspects video elements and observes media response metadata. It temporarily processes media URLs (including query parameters that may contain access tokens), media type, file size, duration, dimensions, tab and frame identifiers, detection times, and whether you hovered a video.</p>
+    <p>It does not read form entries, passwords, cookies, browsing history from the browser history API, or request authorization headers. It does not store page titles or page text. It does not record your screen.</p>
+    <h2>Storage and retention</h2>
+    <p>Up to 100 media candidates per tab are kept in the browser's session memory. The list is cleared when you use Clear list, on normal HTTP(S) page navigation, when the tab closes, or when the browser session ends. Sites that change pages without a full navigation may keep previous candidates; use Clear list on those sites. Extension disable, reload, update, or removal also ends this session storage.</p>
+    <p>Downloaded files and the browser's download history remain until you delete them yourself. Copy URL places the selected media URL on your system clipboard, where other software or clipboard synchronization may access it.</p>
+    <h2>Network activity and sharing</h2>
+    <p>No browsing data or media lists are sent to the authors. There are no analytics, advertising, remote scripts, accounts, or developer-operated servers. Data is not sold or shared for advertising.</p>
+    <p>When you choose Download, your browser requests the original file from its media host. That host receives the request and ordinary connection information, such as your IP address; the browser may send cookies under its own rules. The original URL is preserved, including its HTTP or HTTPS scheme and any signed query parameters. An actual Blob file is read locally in its owning page frame and saved using the browser's page download mechanism.</p>
+    <h2>Why the permissions are needed</h2>
+    <ul><li><strong>Website access:</strong> find video elements in pages and embedded frames, and identify media from separate media hosts.</li><li><strong>webRequest:</strong> observe media response URLs, types, and sizes. Requests are not modified.</li><li><strong>downloads:</strong> save a file only after your click and report its download status.</li><li><strong>storage:</strong> retain the temporary per-tab media list while the extension worker is idle.</li></ul>
+    <h2>Your choices and limited use</h2>
+    <p>Use Clear list to remove a tab's candidates, restrict site access in the browser's extension settings, disable the extension, or uninstall it. No media data is available on an author-controlled server for retrieval or deletion.</p>
+    <p>Information accessed through Chrome APIs is used solely to find and save the video files you request. This use complies with the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
+    <h2>Support</h2><p>For support or privacy questions, email <a href="mailto:neuralvibes.llm@gmail.com">neuralvibes.llm@gmail.com</a>. If you contact us, we receive the email address and information you choose to send through our email provider, Gmail. We use that correspondence to respond and resolve your request, not for marketing. Ask us to delete support correspondence when it is no longer needed. Do not send private media URLs or access tokens.</p>
+  </section>
+  <section><h2>How to save a preview</h2><ol><li>After installing or reloading, refresh the website.</li><li>Hover a thumbnail until its video plays.</li><li>Click Save preview over the video, or open the toolbar popup and choose Download. Refresh list scans the page again.</li><li>Choose a destination and check the browser's Downloads page for completion.</li></ol>
+    <p>Downloads preserve the complete source file. The extension does not trim a longer video to the duration shown in a thumbnail. Network detection can list other page videos or advertisements too.</p>
+    <p>Standalone MP4, WebM, MOV, M4V, and Ogg video files are supported. HLS/DASH playlists and separate stream segments are labeled but cannot be assembled. MediaSource blobs, DRM, image sprites, and canvas-only players are unsupported. Actual Blob files are saved using the on-video button and are not listed in the popup.</p>
+    <p>Some servers reject downloads because of expired links, login requirements, or referrer checks. Hover again to refresh a link. The extension does not bypass access controls or DRM. If the on-video button interrupts a site's hover behavior, use the toolbar popup.</p>
+  </section>
+  <footer><p>Authors: Aydin Gasimov &amp; Majid Rahmanov. Policy changes will be included with extension updates.</p></footer>
+</body></html>
